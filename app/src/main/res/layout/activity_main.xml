@@ -28,7 +28,7 @@ Maecenas quam urna, cursus eu ullamcorper.Morbi imperdiet vehicula tortor nec cu
         app:layout_constraintTop_toBottomOf="@id/tv" />
 
     <TextView
-        android:id="@+id/tvAllSelected"
+        android:id="@+id/tvSelectionCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/labelSelection"

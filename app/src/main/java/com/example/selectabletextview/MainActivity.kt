@@ -22,15 +22,11 @@ class MainActivity : AppCompatActivity() {
             }
             setOnSelectionChangListener(object : SelectableTextView.OnSelectionChangListener {
                 override fun onSelectionChanged(sequence: CharSequence?, isAllSelected: Boolean) {
-                    binding.tvAllSelected.text =
-                        if (isAllSelected) "AllSelected" else "PartSelected"
+                    binding.tvSelectionCount.text = "${sequence?.length ?: 0}/${binding.tv.length()}"
                     binding.tvSelection.text = sequence
                 }
             })
         }
-    }
-
-    private fun String?.loge() {
-        Log.e("cui", this ?: "null")
+        binding.tvSelectionCount.text = "0/${binding.tv.length()}"
     }
 }
