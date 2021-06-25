@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <com.ctc.selectabletextview.SelectableTextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed laoreet massa. Sed rhoncus velit sit amet mi semper laoreet. Phasellus faucibus libero sit amet dictum consectetur. Donec non enim ac eros commodo cursus. Phasellus non justo ac risus ultrices imperdiet eget eget arcu. Nulla diam elit, condimentum ac gravida vel, faucibus a orci. Ut eget tincidunt libero. Suspendisse tristique, nisl vel ultricies bibendum, magna urna placerat enim, vitae scelerisque magna ex sit amet justo. Aenean ultrices urna vel nulla consectetur posuere. Sed bibendum neque ut dictum maximus.
+Maecenas quam urna, cursus eu ullamcorper.Morbi imperdiet vehicula tortor nec cursus. Sed ullamcorper, turpis a sodales semper, ex lorem luctus risus, tincidunt lacinia turpis orci ut lacus. Fusce gravida sit amet mauris quis laoreet. Aenean fermentum rhoncus leo. Aliquam sodales vehicula ligula, a malesuada lorem efficitur eu. Suspendisse non mollis nisi. Integer elementum ipsum vitae tincidunt pellentesque. Nullam enim lacus, vulputate ut pharetra nec, gravida nec mi. Proin sed euismod nulla.
+"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Selection:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    <TextView
+        android:id="@+id/tvAllSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/labelSelection"
+        app:layout_constraintStart_toEndOf="@id/labelSelection"
+        app:layout_constraintTop_toTopOf="@id/labelSelection" />
+
+    <TextView
+        android:id="@+id/tvSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="9dp"
+        android:hint="Long click the text above to start selecting"
+        app:layout_constraintTop_toBottomOf="@id/labelSelection" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
